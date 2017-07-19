@@ -42,5 +42,15 @@ func main() {
                 {13, true},
         }
         fmt.Println(s)
+        printSlice(s)
+        // An uninitialized slice has value 'nil'. Zero value slice. Its
+        // length & capacity are 0, and has no underlying array.
+	// Builtin main() can be used to create slices, with size & capacity.
+	// Slice of slices (like array of arrays.)
+	board := [][]string {
+		{"_", "_", "_"},
+		{"_", "_", "_"},
+		{"_", "_", "_"},
+	}
 }
 
